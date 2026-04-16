@@ -3,7 +3,7 @@ import styles from "./MainSection.module.css";
 import SideBar from "../SideBarSection/SideBar/SideBar.jsx";
 import ProductSection from "../ProductSection/ProductGrid/ProductGrid.jsx";
 import FilterBar from './../FilterBar/FilterBar';
-import { useState } from "react";
+import { useState,useEffect } from "react";
 export default function MainSection() {
   const [data, setData] = useState([]);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
