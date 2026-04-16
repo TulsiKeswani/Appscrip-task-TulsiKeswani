@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import styles from "./page.module.css";
 import Hero from './components/Hero/Hero';
 import MainSection from "./components/MainSection/MainSection.jsx"
