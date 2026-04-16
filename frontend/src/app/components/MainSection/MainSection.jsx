@@ -17,14 +17,12 @@ export default function MainSection() {
         setData(json);
       } catch (error) {
         console.error("Fetch error:", error);
-      } finally {
-        setLoading(false);
-      }
+      } 
     };
 
     fetchData();
   }, []);
-  
+
   return (
     <div className={styles.mainSection}>
       <div>
