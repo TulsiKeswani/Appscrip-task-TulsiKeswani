@@ -1,0 +1,13 @@
+.mainSection{
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.productSection{
+    display: flex;
+    gap: 2rem;
+}

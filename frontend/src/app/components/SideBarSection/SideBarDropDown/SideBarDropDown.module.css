@@ -1,0 +1,33 @@
+.dropSection{
+    display: flex;
+    flex-direction: column;
+    gap : 10px;
+    border-bottom: 1px solid #E5E5E5;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.dropSection .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title p{
+    font-size: 18px;
+    font-weight: 700;
+    color: #252020;
+}
+.unselect {
+    font-size: 1rem;
+    font-weight:400;
+    text-decoration:underline;
+    color: #BFC8CD ;
+}
+
+.option{
+    display: flex;
+    gap: 8px;
+    color:#252020;
+    font-size: 16px;
+    font-weight: 400;
+}
