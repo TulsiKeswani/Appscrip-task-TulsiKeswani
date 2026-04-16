@@ -4,8 +4,27 @@ import SideBar from "../SideBarSection/SideBar/SideBar.jsx";
 import ProductSection from "../ProductSection/ProductGrid/ProductGrid.jsx";
 import FilterBar from './../FilterBar/FilterBar';
 import { useState } from "react";
-export default function MainSection({data}) {
+export default function MainSection() {
+  const [data, setData] = useState([]);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await fetch("https://fakestoreapi.com/products");
+        if (!res.ok) throw new Error("Failed to fetch");
+        const json = await res.json();
+        setData(json);
+      } catch (error) {
+        console.error("Fetch error:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+  
   return (
     <div className={styles.mainSection}>
       <div>
