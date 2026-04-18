@@ -62,11 +62,15 @@
     .links {
         width: 100%;
         flex-direction: column;
+        gap: 1rem;
     }
     .links hr{
         display: block;
     }
     .section .dropDownIcon{
         display: inline;
+    }
+    .heading h2{
+        font-size: 1rem;
     }
 }
