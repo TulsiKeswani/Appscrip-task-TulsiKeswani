@@ -99,7 +99,7 @@ export default function Links() {
           <>
             <div className={styles.followLinks}>
               <img src="/a.png" alt="Linkedin Logo" />
-              <img src="/insta.png" alt="Insta Logo" />
+              <img src="/Insta.png" alt="Insta Logo" />
             </div>
 
             <hr />
@@ -109,7 +109,7 @@ export default function Links() {
             </h2>
 
             <div className={styles.followLinks2}>
-              <img src="/gpay.png" alt="GPay" />
+              <img src="/Gpay.png" alt="GPay" />
               <img src="/opus.png" alt="Opus" />
               <img src="/pay.png" alt="PhonePay" />
               <img src="/amex.png" alt="Amex" />
