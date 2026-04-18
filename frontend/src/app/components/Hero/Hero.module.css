@@ -1,25 +1,48 @@
-.heroContainer{
-    overflow:"hidden";
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-top: 5rem;
-    text-align: center;
-    padding: 10px;
-    color: #252020;
-    gap: 20px;
-    width: 50%;
+.heroContainer {
+  overflow: "hidden";
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 3rem;
+  text-align: center;
+  padding: 10px;
+  color: #252020;
+  gap: 20px;
+  width: 100%;
+  padding-inline: 5%;
 }
 
-.heroContainer h1{
-        font-weight: 400;
-        font-size: 60px;
-        letter-spacing: 1px;
+.heroContainer h1 {
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: 1px;
 }
 
-.heroContainer p{
-    font-size: 22px;
+.heroContainer p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 40px;
+}
+@media (min-width: 950px) {
+  .heroContainer {
+    width: 70%;
+    padding: 5%;
+  }
+  .heroContainer h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 515px) {
+  .heroContainer {
+    padding-block: 0;
+  }
+  .heroContainer h1 {
+    font-size: 23px;
+    font-weight: 700;
+  }
+  .heroContainer p {
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 1.7rem;
+  }
 }
-

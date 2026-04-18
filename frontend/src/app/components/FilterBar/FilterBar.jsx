@@ -25,6 +25,7 @@ export default function FilterBar({ isSidebarOpen, handleClick }) {
           </button>
         )}
       </div>
+        <hr style={{height:"1rem"}}/>
       <div
         className={styles.recommended}
       >

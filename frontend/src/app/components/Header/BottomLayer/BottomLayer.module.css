@@ -1,6 +1,6 @@
 .navbar{
     display: flex;
-    height: 188px;
+    height: auto;
     border-bottom: 1px solid #E5E5E5;
     justify-content: center;
     align-items: center;
@@ -16,23 +16,25 @@
     align-items: center;
 }
 
-
 .secondLayer{
     display: flex;
     gap: 64px;
     height: 24px;
     margin: auto;
+    margin-block : 1rem;
 }
-.secondLayer .logo img{
-    height: 36px;
-    width: 36px;
+.firstLayer .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 .firstLayer .centerText{
-        height: 44px;
         font-weight: 800;
         font-size: 36px;
         letter-spacing: 1px;
-        margin-left: 10%;
+        margin-left: 12%;
+
 }
 .firstLayer .icons{
     display: flex;
@@ -41,26 +43,66 @@
 .secondLayer span{
     height: 24px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
     letter-spacing: 1px;
 }
+.openbar{
+    margin-right: 8px;
+    height: 1.7rem;
+    width: 1.7rem;
+    display: none;
+}
 
-@media (max-width:630px) {
+.linkSection{
+    margin: 1.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    display: none;
+}
+
+@media (max-width:645px) {
     .icons .language{
         display: none;
     }
     .icons .profile{
         display: none;
     }
+    .firstLayer{
+        padding-inline: 0.7rem;
+        padding-block: 1rem;
+    }
+    .secondLayer{
+        gap: 2rem;
+    }
+     .secondLayer span{
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
 }
 
-@media (max-width:345px) {
-    .icons .language{
+@media (max-width:435px){
+    .secondLayer{
         display: none;
     }
-    .icons .profile{
-        display: none;
+    
+    .firstLayer .centerText{
+        font-size: 1.7rem;
+        margin-left: 0;
     }
-  
+    .firstLayer .logo img{
+        height: 2rem;
+        width: 2rem;
+    }
+    .firstLayer .icons{
+        gap: 12px;
+    }
+    .openbar{
+        display: inline;
+    }
+    .linkSection{
+        display: block;
+    }
 }
+
+
 

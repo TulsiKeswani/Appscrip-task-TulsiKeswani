@@ -31,3 +31,10 @@
     font-size: 16px;
     font-weight: 400;
 }
+
+@media (max-width : 345px) {
+    .title p, .unselect{
+        font-size: 0.8rem;
+    }
+    
+}

@@ -1,63 +1,82 @@
-.contactContainer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+.contactContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.left h2{
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    margin-bottom: 1rem;
+.left h2 {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
 }
 
-.left p{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 100%;
-    margin-bottom: 1rem;
+.left p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  margin-bottom: 1rem;
 }
-.form{
-    display: flex;
-    gap: 8px;
-    align-items: center;
+.form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
-.left .form input{
-    all: unset;
-    background-color: #FFFFFF;
-    margin-block: 1rem;
-    width:100%;
-    padding-inline: 20px;
-    padding-block: 10px;
+.left .form input {
+  all: unset;
+  background-color: #ffffff;
+  margin-block: 1rem;
+  width: 100%;
+  padding-inline: 20px;
+  padding-block: 10px;
 }
-.form button{
-    all: unset;
-    border: 1.14px solid #FFF;
-    opacity: 30%;
-    border-radius: 5px;
-    padding-inline: 30px;
-    padding-block: 10px;
-}
-
-.right h2{
-    font-size: 20px;
-    font-weight: 700;
-}
-.right p{
-    font-weight: 400;
-    font-size: 16px;
-    opacity: 0.8;
+.form button {
+  all: unset;
+  border: 1.14px solid #fff;
+  opacity: 30%;
+  border-radius: 5px;
+  padding-inline: 30px;
+  padding-block: 10px;
 }
 
-.right div{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
+.right h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.right p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.8;
 }
 
-.currency img{
-    height: 24px;
-    width: 24px;
+.right .section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.currency {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.currency img {
+  height: 24px;
+  width: 24px;
+}
+
+.contactSource {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.contactContainer hr {
+  display: none;
+}
+@media (max-width: 458px) {
+ 
+  .contactContainer hr {
+    display: block;
+  }
 }
