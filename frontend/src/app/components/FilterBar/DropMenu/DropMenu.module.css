@@ -9,8 +9,9 @@
     color: #252020;
     position: absolute;
     top: 40px;
-    right: auto;
-    width: 230px;
+    right : 0px;
+    width: auto;
+    z-index: 2;
 }
 .dropdown .option {
     display: flex;
@@ -22,4 +23,14 @@
 }
 .active{
     font-weight: 700;
+}
+
+@media (max-width : 445px) {
+    .dropdown{
+        font-size: 1rem;
+        padding-block: 10px;
+    }
+    .dropdown .option{
+        padding-block:0;
+    }
 }
